@@ -20,6 +20,9 @@
     <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
   </div>
+  
+  <%= form.label :rating %>
+  <%= form.number_field :rating, min: 1, max: 5 %>
 
   <div>
     <%= form.label :text, style: "display: block" %>
